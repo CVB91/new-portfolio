@@ -1,91 +1,49 @@
+import Link from 'next/link'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import {name, about, bio,avatar} from '../app/lib/info'
+import { EmailIcon, GitHubIcon, ViewsIcon } from '../app/components/icons'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+    <section>
+      <h1 className='font-bold text-3xl font-serif'>{name}</h1>
+      <p className='my-5 max-w-[450px] text-neutral-800 dark:text-neutral-200'>
+        {about()}
+      </p>
+      <div className='flex items-start md:items-center my-8 flex-col md:flex-row'>
+        <Image
+          alt={name}
+          className='rounded-full grayscale'
+          src={avatar}
+          placeholder='blur'
+          width={100}
+          priority
+        />
+        <div className='mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400'>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://github.com/CVB91'
+            className='flex items-center gap-2'
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            <GitHubIcon />
+            My Github
+          </a>
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='mailto:cphvb91@gmail.com'
+            className='flex items-center gap-2'
+          >
+            <EmailIcon/>
+            Email Me!
           </a>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <p className='my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200'>
+        {bio()}
+      </p>
+    </section>
   )
 }
