@@ -62,6 +62,10 @@ html {
   margin-bottom: 1.25em !important;
 }
 
+.aboutP {
+max-width: 75%;
+}
+
 code[class*='language-'],
 pre[class*='language-'] {
   @apply text-neutral-50;
@@ -132,3 +136,6 @@ table {
 [data-rehype-pretty-code-title] + pre {
   @apply mt-0 rounded-t-none border-t-0;
 }
+
+.contact-form{
+font-family: "--font-kaisei"}

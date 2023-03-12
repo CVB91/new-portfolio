@@ -1,14 +1,19 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import {name, about, bio,avatar} from '../app/lib/info'
 import { EmailIcon, GitHubIcon, ViewsIcon } from '../app/components/icons'
+import useDarkMode from './lib/useDarkMode'
 
 
 export default function Home() {
+
+    const [colorTheme, setTheme] = useDarkMode()
+
   return (
     <section>
-      <h1 className='font-bold text-3xl font-serif'>{name}</h1>
-      <p className='my-5 max-w-[450px] text-neutral-800 dark:text-neutral-200'>
+      <h1 className='font-bold text-[#ecb365] text-3xl font-serif'>{name}</h1>
+      <p className='my-5 max-w-[450px] text-neutral-200 dark:text-neutral-200'>
         {about()}
       </p>
       <div className='flex items-start md:items-center my-8 flex-col md:flex-row'>
@@ -20,7 +25,7 @@ export default function Home() {
           width={100}
           priority
         />
-        <div className='mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400'>
+        <div className='mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-200'>
           <a
             rel='noopener noreferrer'
             target='_blank'
@@ -36,12 +41,12 @@ export default function Home() {
             href='mailto:cphvb91@gmail.com'
             className='flex items-center gap-2'
           >
-            <EmailIcon/>
+            <EmailIcon />
             Email Me!
           </a>
         </div>
       </div>
-      <p className='my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200'>
+      <p className='my-5 max-w-[600px] text-neutral-200'>
         {bio()}
       </p>
     </section>
