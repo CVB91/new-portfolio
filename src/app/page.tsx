@@ -1,8 +1,7 @@
 'use client'
-import Link from 'next/link'
-import Image from 'next/image'
-import {name, about, bio,avatar} from '../app/lib/info'
-import { EmailIcon, GitHubIcon, ViewsIcon } from '../app/components/icons'
+
+import {name, about, bio} from '../app/lib/info'
+import { BlogIcon, EmailIcon, GitHubIcon, ViewsIcon } from '../app/components/icons'
 import useDarkMode from './lib/useDarkMode'
 
 
@@ -17,14 +16,6 @@ export default function Home() {
         {about()}
       </p>
       <div className='flex items-start md:items-center my-8 flex-col md:flex-row'>
-        <Image
-          alt={name}
-          className='rounded-full grayscale'
-          src={avatar}
-          placeholder='blur'
-          width={100}
-          priority
-        />
         <div className='mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-200'>
           <a
             rel='noopener noreferrer'
@@ -33,7 +24,7 @@ export default function Home() {
             className='flex items-center gap-2'
           >
             <GitHubIcon />
-            My Github
+            Github
           </a>
           <a
             rel='noopener noreferrer'
@@ -41,14 +32,12 @@ export default function Home() {
             href='mailto:cphvb91@gmail.com'
             className='flex items-center gap-2'
           >
-            <EmailIcon />
-            Email Me!
+            <BlogIcon />
+            Blog
           </a>
         </div>
       </div>
-      <p className='my-5 max-w-[600px] text-neutral-200'>
-        {bio()}
-      </p>
+      <p className='my-5 max-w-[600px] text-neutral-200'>{bio()}</p>
     </section>
   )
 }
