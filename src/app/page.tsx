@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section>
       <h1 className='font-bold text-[#ecb365] text-3xl font-serif'>{name}</h1>
-      <p className='my-5 max-w-[450px] text-neutral-200 dark:text-neutral-200'>
+      <p className='my-5 max-w-[500px] text-neutral-200 dark:text-neutral-200'>
         {about()}
       </p>
       <div className='flex items-start md:items-center my-8 flex-col md:flex-row'>
@@ -23,21 +23,23 @@ export default function Home() {
             href='https://github.com/CVB91'
             className='flex items-center gap-2'
           >
+            Lets connect on Github
             <GitHubIcon />
-            Github
+            
           </a>
           <a
             rel='noopener noreferrer'
             target='_blank'
-            href='mailto:cphvb91@gmail.com'
+            href=''
             className='flex items-center gap-2'
           >
+            Have a peek at my blog
             <BlogIcon />
-            Blog
+            
           </a>
         </div>
       </div>
-      <p className='my-5 max-w-[600px] text-neutral-200'>{bio()}</p>
+      <p className='my-5 max-w-[500px] text-neutral-200'>{bio()}</p>
     </section>
   )
 }
