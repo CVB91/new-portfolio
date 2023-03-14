@@ -59,7 +59,7 @@ export const projects: Project[] = [
     visit: 'https://google.com',
     id: 4,
   },
-    {
+  {
     title: 'My Kneipe',
     description:
       'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
@@ -69,17 +69,17 @@ export const projects: Project[] = [
     visit: 'https://google.com',
     id: 5,
   },
-    {
-    title: 'Kosmos',
+  {
+    title: 'MindMap',
     description:
-      'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
+      'MindMap is my personal blog where I write about the trials and tribulations of being a self-taught web developer. There are some useful how-tos thrown in for good measure.',
     image: '/images/4.jpg',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 6,
   },
-    {
+  {
     title: 'Kosmos',
     description:
       'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     visit: 'https://google.com',
     id: 8,
   },
-    {
+  {
     title: 'Kosmos',
     description:
       'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
