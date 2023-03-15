@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode:'class',
+  darkMode: 'class',
   content: [
     './src/app/**/*.{ts,tsx}',
     './src/app/components/**/*.{ts,tsx}',
@@ -10,6 +10,12 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ['var(--font-kaisei)'],
+      },
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
+      backfaceVisibility: {
+        hidden: 'backface-visibility:hidden',
       },
       typography: {
         quoteless: {

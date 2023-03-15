@@ -1,7 +1,7 @@
 'use client'
 
 import {name, about, bio} from '../app/lib/info'
-import { BlogIcon, EmailIcon, GitHubIcon, ViewsIcon } from '../app/components/icons'
+import { BlogIcon, GitHubIcon } from '../app/components/icons'
 import useDarkMode from './lib/useDarkMode'
 
 
