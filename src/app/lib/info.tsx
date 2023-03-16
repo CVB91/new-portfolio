@@ -7,15 +7,18 @@ export const avatar = me
 export const about = () => {
   return (
     <>
-      Hello. I'm Christian. I'm a <b>web developer</b> and I build things for a living and for fun.
+      Hello. I'm Christian. I'm a{' '}
+      <span className='text-[#ecb365]'>
+        <b>web developer</b>
+      </span>{' '} and I specialise in building beautiful web-based experiences
     </>
-  );
+  )
 };
 export const bio = () => {
   return (
     <>
       I have a diverse background. I worked previously in digital communications
-      and academia. Now I specialise in building beautiful web-based experiences.
+      and academia. Now I.
     </>
   )
 };
