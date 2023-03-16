@@ -139,3 +139,8 @@ table {
 
 .contact-form{
 font-family: "--font-kaisei"}
+
+
+.mask{
+backface-visibility: hidden;
+}
