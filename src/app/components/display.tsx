@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import Image from 'next/image'
 
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub,FaExternalLinkAlt } from 'react-icons/fa'
 
 const Display = ({ imageUrl, text }) => {
   const cardStyle = `
@@ -40,7 +40,7 @@ const Display = ({ imageUrl, text }) => {
 
             <div className={backStyle}>
               <div className='flex min-h-full flex-col items-center justify-center'>
-                <h1 className='text-3xl font-bold'>Jane Doe</h1>
+                <h1 className='text-xl font-bold'>{text}</h1>
                 <p className='text-lg'>Photographer & Art</p>
                 <p className='text-base'>
                   Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -58,8 +58,8 @@ const Display = ({ imageUrl, text }) => {
         </div>
       </div>
       <div className='mt-4 flex space-x-4'>
-        <button className=' text-white py-1 px-3 rounded-md hover:text-[#ecb365]'>
-          Discover
+        <button className=' text-white text-sm py-1 px-3 rounded-md hover:text-[#ecb365]'>
+          <FaExternalLinkAlt/>
         </button>
         <button className=' text-white p-1 rounded-md hover:text-[#ecb365]'>
           <FaGithub />

@@ -10,7 +10,7 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Winter Hammock Company -> E-commerce',
+    title: 'Winter Hammock Company',
     description:
       "Full Stack MERN Application E-commerce application for the Winter Hammock Company.The Winter Hammock Company creates luxury outdoor goods, specializing in comfortable and unique winter hammocks made from high-quality materials like sheepskin. Handmade by skilled artisans, each hammock is meticulously crafted to perfection, with a variety of styles and colors available. The brand's products are functional, beautiful, and stylish, making them the perfect statement piece in any outdoor space. With a commitment to quality craftsmanship and premium materials, The Winter Hammock Company is a trusted name in the outdoor luxury market, offering the ultimate in relaxation and comfort for winter retreats or outdoor oases. ",
     image: '/1.png',
