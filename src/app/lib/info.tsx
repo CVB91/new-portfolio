@@ -10,7 +10,7 @@ export const about = () => {
       Hello. I'm Christian. I'm a{' '}
       <span className='text-[#ecb365]'>
         <b>web developer</b>
-      </span>{' '} and I specialise in building beautiful web-based experiences
+      </span>{' '} and I specialise in building beautiful web-based experiences.
     </>
   )
 };
