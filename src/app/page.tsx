@@ -6,7 +6,7 @@ import { name, about } from '../app/lib/info'
 import { BlogIcon, GitHubIcon } from '../app/components/icons'
 
 // Importing the 'useDarkMode' custom hook from the './lib/useDarkMode' module
-import useDarkMode from './lib/useDarkMode'
+
 
 // Importing the 'RainEffect' component from the './components/rainEffect' module
 import RainEffect from './components/rainEffect'
@@ -14,7 +14,7 @@ import RainEffect from './components/rainEffect'
 // Defining a functional React component called 'Home'
 export default function Home() {
   // Using the custom 'useDarkMode' hook to get the current color theme and the function to change it
-  const [colorTheme, setTheme] = useDarkMode()
+
 
   // The JSX code to render the Home component
   return (

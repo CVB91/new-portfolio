@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: 'Winter Hammock Company',
     description:
       "Full Stack MERN Application E-commerce application for the Winter Hammock Company.The Winter Hammock Company creates luxury outdoor goods, specializing in comfortable and unique winter hammocks made from high-quality materials like sheepskin. Handmade by skilled artisans, each hammock is meticulously crafted to perfection, with a variety of styles and colors available. The brand's products are functional, beautiful, and stylish, making them the perfect statement piece in any outdoor space. With a commitment to quality craftsmanship and premium materials, The Winter Hammock Company is a trusted name in the outdoor luxury market, offering the ultimate in relaxation and comfort for winter retreats or outdoor oases. ",
-    image: '/1.png',
+    image: '/winterhammock.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
     visit: 'https://google.com',
@@ -23,19 +23,19 @@ export const projects: Project[] = [
     title: 'Password Generator',
     description:
       'A password generator is a tool that automatically creates strong, randomized passwords for users. These passwords are typically designed to be difficult to guess or crack, providing increased security for online accounts and sensitive information. Password generators can help users protect themselves from cyber attacks and ensure that their accounts remain secure.',
-    image: '/1.png',
+    image: '/passwordgen.png',
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 1,
   },
   {
-    title: 'Decarbon',
+    title: 'Airprint',
     description:
-      'Decarbon is a fullstack web app that calculates your flight carbon data, helping you to understand your environmental impact. The app uses publicly available formulas to calculate the carbon emissions associated with your flight, taking into account factors such as distance, flight duration, and aircraft type. With Decarbon, users can make informed decisions about their travel and reduce their carbon footprint.',
-    image: '/1.png',
-    tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
+      'Airprint is a web app that calculates your flight carbon data, helping you to understand your environmental impact. The app uses publicly available formulas to calculate the carbon emissions associated with your flight, taking into account factors such as distance, flight duration, and aircraft type. With Airprint, users can make informed decisions about their travel and reduce their carbon footprint.',
+    image: '/airprint.png',
+    tags: ['Vanilla JS', 'API'],
+    source: 'https://airprint.vercel.app/',
     visit: 'https://google.com',
     id: 2,
   },
@@ -80,10 +80,10 @@ export const projects: Project[] = [
     id: 6,
   },
   {
-    title: 'Number 8',
+    title: 'Flight Carbon API',
     description:
       'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
-    image: '/1.png',
+    image: '/8-2.png',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://google.com',
     visit: 'https://google.com',
