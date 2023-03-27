@@ -50,34 +50,14 @@ export const projects: Project[] = [
     id: 3,
   },
   {
-    title: 'Prisma',
+    title: 'MindMap',
     description:
-      "Primsa is an artistic and creative photography collective that focuses on abstract pictures of cities and streets. Their photographs capture the beauty and mystery of urban environments, using unique perspectives, angles, and colors to create stunning and thought-provoking images. With a focus on artistry and creativity, Primsa's photography offers a fresh and inspiring perspective on urban landscapes.",
-    image: '/1.png',
+      'MindMap is my personal blog where I write about the trials and tribulations of being a self-taught web developer. There are some useful how-tos thrown in for good measure.',
+    image: '/mindmap.png',
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 4,
-  },
-  {
-    title: 'My Kneipe',
-    description:
-      'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
-    image: '/1.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 5,
-  },
-  {
-    title: 'MindMap',
-    description:
-      'MindMap is my personal blog where I write about the trials and tribulations of being a self-taught web developer. There are some useful how-tos thrown in for good measure.',
-    image: '/1.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 6,
   },
   {
     title: 'Flight Carbon API',
@@ -87,26 +67,6 @@ export const projects: Project[] = [
     tags: ['React', 'ChatEngine', 'Firebase'],
     source: 'https://google.com',
     visit: 'https://google.com',
-    id: 7,
-  },
-  {
-    title: 'Number 9',
-    description:
-      'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
-    image: '/1.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 8,
-  },
-  {
-    title: 'Number 10',
-    description:
-      'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
-    image: '/1.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 9,
+    id: 5,
   },
 ]
