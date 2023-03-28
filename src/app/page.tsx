@@ -46,7 +46,7 @@ export default function Home() {
           <a
             rel='noopener noreferrer'
             target='_blank'
-            href=''
+            href='https://mind-map-nu.vercel.app/'
             className='flex items-center gap-2'
           >
             Have a peek at my blog
