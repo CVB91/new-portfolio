@@ -8,8 +8,7 @@ import { BlogIcon, GitHubIcon } from '../app/components/icons'
 // Importing the 'useDarkMode' custom hook from the './lib/useDarkMode' module
 
 
-// Importing the 'RainEffect' component from the './components/rainEffect' module
-import RainEffect from './components/rainEffect'
+
 
 // Defining a functional React component called 'Home'
 export default function Home() {
