@@ -30,13 +30,29 @@ function Grid(props) {
   console.log(projects[1].image)
   return (
     <ul className='grid grid-cols-1 sm:grid-cols-2  gap-10 place-content-center'>
-      {projects.map((project) => (
-       !isHoverCapable ? <MobileDisplay key={project.title} text={project.title} imageUrl={project.image}/> : <Display
-          key={project.title}
-          text={project.title}
-          imageUrl={project.image}
-        />  
-      ))}
+      {projects.map((project) =>
+        !isHoverCapable ? (
+          <MobileDisplay
+            key={project.title}
+            text={project.title}
+            imageUrl={project.image}
+            description={project.description}
+            tags={project.tags}
+            source={project.source}
+            code={project.code}
+          />
+        ) : (
+          <Display
+            key={project.title}
+            text={project.title}
+            imageUrl={project.image}
+              description={project.description}
+              tags={project.tags}
+              source={project.source}
+              code={project.code}
+          />
+        )
+      )}
     </ul>
   )
 }

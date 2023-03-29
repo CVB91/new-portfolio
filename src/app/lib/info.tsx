@@ -17,8 +17,9 @@ export const about = () => {
 export const bio = () => {
   return (
     <>
-      I have a diverse background. I worked previously in digital communications
-      and academia. Now I build things for the web. I have a built a strong foundation across multiple web technologies and frameworks. I am a full stack developer with a focus on the front end. I am a strong believer in the power of the web and I am passionate about building beautiful and accessible web experiences.
+      <span>I am a full stack developer and I am a strong believer in the power of the web. I am passionate about building beautiful and accessible web experiences. Over the course of my developer journey, I have a built a strong foundation across multiple web technologies and frameworks.</span>
+      <span>{" "}</span>
+      <span>I am currently working freelance am always looking for new opportunities. If you have a project that you would like to discuss, please feel free to get in touch.</span> 
     </>
   )
 };

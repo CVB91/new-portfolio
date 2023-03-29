@@ -2,9 +2,9 @@ interface Project {
   title: string
   description: string
   image: string
-  tags: string[]
+  tags: string
   source: string
-  visit: string
+  code: string
   id: number
 }
 
@@ -12,61 +12,62 @@ export const projects: Project[] = [
   {
     title: 'Winter Hammock Company',
     description:
-      "Full Stack MERN Application E-commerce application for the Winter Hammock Company.The Winter Hammock Company creates luxury outdoor goods, specializing in comfortable and unique winter hammocks made from high-quality materials like sheepskin. Handmade by skilled artisans, each hammock is meticulously crafted to perfection, with a variety of styles and colors available. The brand's products are functional, beautiful, and stylish, making them the perfect statement piece in any outdoor space. With a commitment to quality craftsmanship and premium materials, The Winter Hammock Company is a trusted name in the outdoor luxury market, offering the ultimate in relaxation and comfort for winter retreats or outdoor oases. ",
+      'Full Stack MERN Application E-commerce application for the Winter Hammock Company.',
     image: '/winterhammock.png',
-    tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    tags: `MongoDB, Express, React and Node`,
+    source: 'https://winterhammockcompany.herokuapp.com',
+    code: 'https://github.com/CVB91/winter-hammock-company',
     id: 0,
   },
   {
-    title: 'Password Generator',
+    title: 'Flight Carbon API',
     description:
-      'A password generator is a tool that automatically creates strong, randomized passwords for users. These passwords are typically designed to be difficult to guess or crack, providing increased security for online accounts and sensitive information. Password generators can help users protect themselves from cyber attacks and ensure that their accounts remain secure.',
-    image: '/passwordgen.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 1,
+      'Flight Carbon API is a REST API that calculates the carbon footprint of a flight. Free to use forever.',
+    image: '/8-2.png',
+    tags: `NextJS, Prisma, Typescript, Tailwind CSS, Upstash, Redis`,
+    source: 'https://flight-carbon-api.vercel.app',
+    code: 'https://github.com/CVB91/Flight-Carbon-API',
+    id: 2,
   },
+
   {
     title: 'Airprint',
     description:
-      'Airprint is a web app that calculates your flight carbon data, helping you to understand your environmental impact. The app uses publicly available formulas to calculate the carbon emissions associated with your flight, taking into account factors such as distance, flight duration, and aircraft type. With Airprint, users can make informed decisions about their travel and reduce their carbon footprint.',
+      'Airprint is a web app that calculates your flight carbon data. The app calls the Flight Carbon API to retrieve flight data and calculates the carbon footprint of each flight.',
     image: '/airprint.png',
-    tags: ['Vanilla JS', 'API'],
+    tags: `Vanilla JS, HTML, Tailwind CSS`,
     source: 'https://airprint.vercel.app/',
-    visit: 'https://google.com',
-    id: 2,
+    code: 'https://github.com/CVB91/Airprint',
+    id: 3,
   },
   {
-    title: 'Kosmos',
+    title: 'Prisma',
     description:
-      'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
-    image: '/1.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
+      'Creative porfolio site for Prisma Studios, a collective of creative photographers from around the world. No framework.',
+    image: '/prisma.png',
+    tags: `Vanilla JS, GSAP, HTML, CSS`,
+    source: 'https://prisma-ten-ruby.vercel.app/',
+    code: 'https://prisma-ten-ruby.vercel.app/',
+    id: 4,
   },
   {
     title: 'MindMap',
     description:
       'MindMap is my personal blog where I write about the trials and tribulations of being a self-taught web developer. There are some useful how-tos thrown in for good measure.',
     image: '/mindmap.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 4,
+    tags: `React, Next.js, CSS Modules, Mongo DB`,
+    source: 'https://mind-map-nu.vercel.app/',
+    code: 'https://github.com/CVB91/MindMap',
+    id: 5,
   },
   {
-    title: 'Flight Carbon API',
+    title: 'Password Generator',
     description:
-      'Kosmos is an educational website that offers a wealth of information about our solar system. From articles and videos to interactive tools and games, Kosmos provides engaging and accessible content that teaches users about the planets, stars, and other celestial bodies in our universe. With its user-friendly design and informative resources, Kosmos is a valuable tool for anyone interested in astronomy and space exploration.',
-    image: '/8-2.png',
-    tags: ['React', 'ChatEngine', 'Firebase'],
+      'A password generator is a tool that automatically creates strong, randomized passwords for users.',
+    image: '/passwordgen.png',
+    tags: `Vanilla JS, HTML, Tailwind CSS`,
     source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 5,
+    code: 'https://github.com/CVB91/password-gen',
+    id: 6,
   },
 ]
