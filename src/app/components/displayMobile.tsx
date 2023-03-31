@@ -19,9 +19,9 @@ const MobileDisplay = ({ imageUrl, text }) => {
               className='rounded-xl object-cover shadow-xl'
             />
           </div>
-          <div className='absolute bottom-2 left-1/4 h-1/5'>
-            <div className='flex min-h-full flex-col items-center justify-center text-center'>
-              <h4 className='mt-2 font-bold'>{text}</h4>
+          <div className='absolute bottom-2  h-1/5 w-full'>
+            <div className='flex min-h-full flex-col items-center justify-center text-center  mt-3 '>
+              <h4 className='mt-2 font-bold '>{text}</h4>
               <div className='mt-2 flex space-x-4'>
                 <button className='text-sm py-1 px-3 rounded-md text-[#ecb365]'>
                   <FaExternalLinkAlt />

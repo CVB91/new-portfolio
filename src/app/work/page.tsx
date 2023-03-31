@@ -9,29 +9,25 @@ import Image from 'next/image'
 import MobileDisplay from '../components/displayMobile'
 import Display from '../components/display'
 
-function Grid(props) {
-
-  const [isHoverCapable, setIsHoverCapable] = useState(true)
+const Grid: React.FC<Props> = ({ projects }) => {
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    function checkHoverCapability() {
-      if (window.matchMedia) {
-        return window.matchMedia('(hover: hover)').matches
-      } else {
-        // matchMedia is not supported by the browser, assume hover is not supported
-        return false
-      }
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768) // adjust the threshold as needed
     }
+    window.addEventListener('resize', handleResize)
+    handleResize()
 
-    setIsHoverCapable(checkHoverCapability())
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
-  const { projects } = props
-  console.log(projects[1].image)
   return (
-    <ul className='grid grid-cols-1 sm:grid-cols-2  gap-10 place-content-center'>
+    <ul className='grid grid-cols-1 sm:grid-cols-2 gap-10 place-content-center'>
       {projects.map((project) =>
-        !isHoverCapable ? (
+        isMobile ? (
           <MobileDisplay
             key={project.title}
             text={project.title}
@@ -46,10 +42,10 @@ function Grid(props) {
             key={project.title}
             text={project.title}
             imageUrl={project.image}
-              description={project.description}
-              tags={project.tags}
-              source={project.source}
-              code={project.code}
+            description={project.description}
+            tags={project.tags}
+            source={project.source}
+            code={project.code}
           />
         )
       )}
