@@ -67,7 +67,7 @@ const ContactForm = (): JSX.Element => {
   if (requestStatus === 'success') {
     toast({
       title: 'Success!',
-      message: 'Your message is on its way!',
+      message: 'Your message has been sent!',
       type: 'success',
     })
   }

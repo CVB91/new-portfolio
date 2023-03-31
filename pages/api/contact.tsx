@@ -57,7 +57,9 @@ const handler: NextApiHandler = async (req, res) => {
     client.close()
 
     res.status(201).json({ message: 'Message sent successfully', newMessage })
+    res.end()
   }
+  
 }
 
 export default handler

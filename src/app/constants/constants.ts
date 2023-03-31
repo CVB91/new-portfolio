@@ -47,7 +47,7 @@ export const projects: Project[] = [
     image: '/prisma.png',
     tags: `Vanilla JS, GSAP, HTML, CSS`,
     source: 'https://prisma-ten-ruby.vercel.app/',
-    code: 'https://prisma-ten-ruby.vercel.app/',
+    code: 'https://github.com/CVB91/prisma',
     id: 4,
   },
   {

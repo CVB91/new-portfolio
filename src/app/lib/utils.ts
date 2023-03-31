@@ -6,7 +6,7 @@ export async function sendContactData(contactDetails: {
   name: string
   message: string
 }): Promise<void> {
-  const response = await fetch('http://localhost:3000/api/contact', {
+  const response = await fetch('api/contact', {
     method: 'POST',
     body: JSON.stringify(contactDetails),
     headers: {
