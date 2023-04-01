@@ -9,6 +9,21 @@ import Image from 'next/image'
 import MobileDisplay from '../components/displayMobile'
 import Display from '../components/display'
 
+
+type Props = {
+  projects: Project[]
+}
+
+type Project = {
+  title: string
+  image: string
+  description: string
+  tags: string
+  source: string
+  code: string
+
+}
+
 const Grid: React.FC<Props> = ({ projects }) => {
   const [isMobile, setIsMobile] = useState(false)
 

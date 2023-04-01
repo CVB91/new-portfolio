@@ -7,7 +7,7 @@ export const avatar = me
 export const about = () => {
   return (
     <>
-      Hello. I'm Christian. I'm a{' '}
+      Hello. I am Christian. I am a{' '}
       <span className='text-[#ecb365]'>
         <b>web developer</b>
       </span>{' '} and I specialise in building beautiful web-based experiences.

@@ -7,7 +7,18 @@ import Image from 'next/image'
 
 import { FaGithub,FaExternalLinkAlt } from 'react-icons/fa'
 
-const Display = ({ imageUrl, text, description, tags, source, code }) => {
+
+
+type DisplayProps = {
+  imageUrl: string
+  text: string
+  description: string
+  tags: string[]
+  source: string
+  code: string
+}
+
+const Display = ({ imageUrl, text, description, tags, source, code }: DisplayProps) => {
   const cardStyle = `
     relative h-full w-full rounded-xl shadow-xl transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] mask [backface-visibility:hidden]
   `

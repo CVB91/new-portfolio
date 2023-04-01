@@ -47,7 +47,7 @@ const ContactForm = (): JSX.Element => {
       setEnteredMessage('')
       setEnteredName('')
       setEnteredEmail('')
-    } catch (error) {
+    } catch (error : any) {
       console.log(error.message)
       setRequestError(error.message)
       setRequestStatus('error')

@@ -6,7 +6,13 @@ import React from 'react'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
-const MobileDisplay = ({ imageUrl, text }) => {
+
+type MobileProps = {
+  imageUrl: string
+  text: string
+}
+
+const MobileDisplay = ({ imageUrl, text } : MobileProps) => {
   return (
     <div className='flex h-96 w-80 items-center justify-center'>
       <div className='group h-96 w-80 [perspective:1000px]'>

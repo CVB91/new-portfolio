@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
+type PathName = '/' | '/about' | '/work' | '/contact'
 
 const navItems = {
   '/': {
@@ -24,14 +25,14 @@ const navItems = {
   },
 }
 
+let pathname: string
+
 export default function Navbar() {
-  let pathname = usePathname() || '/'
- 
+  pathname = usePathname() || '/'
 
   // Set the active item in the navItems object based on the current pathname
 
-    navItems[pathname].isActive = true
-
+  navItems[pathname as PathName].isActive = true
 
   return (
     <aside className='md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif'>
