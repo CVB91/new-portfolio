@@ -68,6 +68,7 @@ const Grid: React.FC<Props> = ({ projects }) => {
   )
 }
 
+//work page
 export default function WorkPage() {
   return (
     <section>
