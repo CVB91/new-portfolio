@@ -19,7 +19,7 @@ type MobileProps = {
 
 const MobileDisplay = ({ imageUrl, text } : MobileProps) => {
   return (
-    <div className='flex h-96 w-80 items-center justify-center'>
+    <div className='flex h-96 w-70 items-center justify-center'>
       <div className='group h-96 w-80 [perspective:1000px]'>
         <div className='relative h-full w-full rounded-xl '>
           <div className='absolute inset-0 h-4/5'>

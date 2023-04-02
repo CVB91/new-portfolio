@@ -17,9 +17,29 @@ export const about = () => {
 export const bio = () => {
   return (
     <>
-      <span>I am a full stack developer and I am a strong believer in the power of the web. I am passionate about building beautiful and accessible web experiences. Over the course of my developer journey, I have a built a strong foundation across multiple web technologies and frameworks.</span>
-      <span>{" "}</span>
-      <span>I am currently working freelance am always looking for new opportunities. If you have a project that you would like to discuss, please feel free to get in touch.</span> 
+      <span>
+        I am a full stack developer based in Berlin and I combine my background
+        in digital communications and political science to create diverse digtal
+        experiences . As a self-taught programmer, my unyielding determination
+        and ability to work independently showcase my passion for
+        problem-solving. <br></br>
+        <br></br> I enjoy working with a wide array of web technologies,
+        consistently seeking opportunities to expand my ever-growing knowledge
+        base. Infused with a thirst for learning, I truly embrace what it means
+        to be a developer: a lifelong student of technolgy. What is not to like?{' '}
+        <br></br>
+        <br></br>
+      </span>
+      <span> </span>
+      <span>
+        I am currently working freelance and am always looking for new
+        opportunities. If you have a project that you would like to discuss,
+        please feel free to get in{' '}
+        <a className='font-bold text-[#ecb365]' href='/contact'>
+          touch.
+        </a>
+        
+      </span>
     </>
   )
 };
