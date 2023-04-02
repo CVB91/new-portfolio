@@ -5,20 +5,25 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import Image from 'next/image'
 
-import { FaGithub,FaExternalLinkAlt } from 'react-icons/fa'
-
-
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 type DisplayProps = {
   imageUrl: string
   text: string
   description: string
-  tags: string[]
+  tags: string
   source: string
   code: string
 }
 
-const Display = ({ imageUrl, text, description, tags, source, code }: DisplayProps) => {
+const Display = ({
+  imageUrl,
+  text,
+  description,
+  tags,
+  source,
+  code,
+}: DisplayProps) => {
   const cardStyle = `
     relative h-full w-full rounded-xl shadow-xl transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] mask [backface-visibility:hidden]
   `
@@ -63,10 +68,14 @@ const Display = ({ imageUrl, text, description, tags, source, code }: DisplayPro
       </div>
       <div className='mt-4 flex space-x-4'>
         <button className=' text-white text-sm py-1 px-3 rounded-md hover:text-[#ecb365]'>
-        <Link href={source}><FaExternalLinkAlt /></Link>  
+          <Link href={source}>
+            <FaExternalLinkAlt />
+          </Link>
         </button>
         <button className=' text-white p-1 rounded-md hover:text-[#ecb365]'>
-          <Link href={code}><FaGithub /></Link>
+          <Link href={code}>
+            <FaGithub />
+          </Link>
         </button>
       </div>
     </div>

@@ -8,8 +8,13 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 
 type MobileProps = {
-  imageUrl: string
+  key: string
   text: string
+  imageUrl: string
+  description: string // Add this line
+  tags: string
+  source: string
+  code: string
 }
 
 const MobileDisplay = ({ imageUrl, text } : MobileProps) => {
