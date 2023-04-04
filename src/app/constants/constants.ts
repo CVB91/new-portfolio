@@ -66,7 +66,7 @@ export const projects: Project[] = [
       'A password generator is a tool that automatically creates strong, randomized passwords for users. Built from Figma files from Frontend Mentor.',
     image: '/passwordgen.png',
     tags: `Vanilla JS, HTML, Tailwind CSS`,
-    source: 'https://password-gen-sooty.vercel.app/',
+    source: 'https://password-gen-git-main-cvb91.vercel.app/',
     code: 'https://github.com/CVB91/password-gen',
     id: 6,
   },
