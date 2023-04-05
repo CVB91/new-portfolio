@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'Flight Carbon API',
     description:
       'Flight Carbon API is a REST API that calculates the carbon footprint of a flight. Free to use forever.',
-    image: '/8-2.png',
+    image: '/flightcarbon.png',
     tags: `NextJS, Prisma, Typescript, Tailwind CSS, Upstash, Redis`,
     source: 'https://flight-carbon-api.vercel.app',
     code: 'https://github.com/CVB91/Flight-Carbon-API',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: 'Airprint',
     description:
       'Airprint is a web app that calculates your flight carbon data. The app calls the Flight Carbon API to retrieve flight data and calculates the carbon footprint of each flight.',
-    image: '/airprint.png',
+    image: '/airprint1.png',
     tags: `Vanilla JS, HTML, Tailwind CSS`,
     source: 'https://airprint.vercel.app/',
     code: 'https://github.com/CVB91/Airprint',
