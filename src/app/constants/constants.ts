@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     title: 'Flight Carbon API',
     description:
-      'Flight Carbon API is a REST API that calculates the carbon footprint of a flight. Free to use forever.',
+      'Flight Carbon API is a REST API that calculates the carbon footprint of a flight. Free to use forever, try it out!',
     image: '/flightcarbon.png',
     tags: `NextJS, Prisma, Typescript, Tailwind CSS, Upstash, Redis`,
     source: 'https://flight-carbon-api.vercel.app',
